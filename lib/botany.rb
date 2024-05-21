@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require_relative 'botany/bot'
 require_relative 'botany/version'
 
