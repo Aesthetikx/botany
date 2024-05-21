@@ -5,3 +5,7 @@
 require "botany"
 
 puts "Botany #{Botany::VERSION}"
+
+options = { update: true }
+
+Whenever::CommandLine.execute(options)
