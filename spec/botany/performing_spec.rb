@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe Botany::Performing do
   it 'wants a #perform method implemented' do
     bot = Botany::Bot.new

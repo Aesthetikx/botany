@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe Botany::Scheduling do
   describe '#schedule' do
     subject :klass do
