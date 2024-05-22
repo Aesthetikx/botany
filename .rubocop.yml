@@ -12,6 +12,9 @@ Layout/LineLength:
 RSpec/ExampleLength:
   CountAsOne: ['array', 'hash']
 
+Style/Documentation:
+  Enabled: false
+
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
 
