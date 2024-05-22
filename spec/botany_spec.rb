@@ -1,5 +1,5 @@
 describe Botany do
   it 'has a version number' do
-    expect(Botany::VERSION).not_to be_nil
+    Botany::VERSION.should_not be_nil
   end
 end

@@ -15,6 +15,12 @@ Lint/AmbiguousOperator:
 RSpec/ExampleLength:
   CountAsOne: ['array', 'hash']
 
+RSpec/ImplicitExpect:
+  EnforcedStyle: should
+
+RSpec/NoExpectationExample:
+  Enabled: false
+
 Style/DefWithParentheses:
   Enabled: false
 

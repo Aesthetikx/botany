@@ -3,7 +3,9 @@ module Botany
     prepend Enumerable
 
     def all
-      ObjectSpace.each_object(Class).select { |klass| klass < self }
+      klasses = ObjectSpace.each_object Class
+
+      klasses.select { |klass| klass < self }
     end
 
     def each &block

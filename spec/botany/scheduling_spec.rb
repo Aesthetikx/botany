@@ -14,7 +14,7 @@ describe Botany::Scheduling do
     end
 
     it 'stores a schedule' do
-      expect(klass.schedule).to eq [
+      klass.schedule.should eq [
         ['0 0 27-31 * *'],
         [:sunday],
         [1.hour],
@@ -43,7 +43,7 @@ describe Botany::Scheduling do
 
       cron = job_list.generate_cron_output
 
-      expect(cron).to include '0 0 * * 3'
+      cron.should include '0 0 * * 3'
     end
   end
 end
