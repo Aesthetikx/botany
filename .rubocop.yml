@@ -9,6 +9,9 @@ AllCops:
 Layout/LineLength:
   Max: 120
 
+RSpec/ExampleLength:
+  CountAsOne: ['array', 'hash']
+
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
 
