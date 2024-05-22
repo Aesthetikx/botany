@@ -9,14 +9,26 @@ AllCops:
 Layout/LineLength:
   Max: 120
 
+Lint/AmbiguousOperator:
+  Enabled: false
+
 RSpec/ExampleLength:
   CountAsOne: ['array', 'hash']
+
+Style/DefWithParentheses:
+  Enabled: false
 
 Style/Documentation:
   Enabled: false
 
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
+
+Style/MethodDefParentheses:
+  EnforcedStyle: require_no_parentheses
+
+Style/MethodCallWithArgsParentheses:
+  EnforcedStyle: omit_parentheses
 
 Style/StringLiterals:
   Enabled: true
