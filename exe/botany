@@ -6,4 +6,4 @@ puts "Botany #{Botany::VERSION}"
 
 options = { update: true }
 
-Whenever::CommandLine.execute(options)
+Whenever::CommandLine.execute options
