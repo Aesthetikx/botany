@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe Botany::Bot do
+describe Botany::Performing do
   it 'wants a #perform method implemented' do
-    bot = described_class.new
+    bot = Botany::Bot.new
 
     expect { bot.perform }.to raise_error Botany::Error, /should implement #perform/
   end
