@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Botany::Scheduling do
-  describe '::schedule' do
+  describe '#schedule' do
     subject :klass do
       Class.new do
         extend Botany::Scheduling
@@ -22,6 +22,30 @@ describe Botany::Scheduling do
         [1.hour],
         [3.days, { at: ['4:30 am', '6:00 pm'] }]
       ]
+    end
+  end
+
+  describe '::schedule_whenever!' do
+    before do
+      Class.new Botany::Bot do
+        def self.name
+          'MyBot'
+        end
+
+        schedule do
+          every :wednesday
+        end
+      end
+    end
+
+    it 'creates valid cron' do
+      options = { string: 'Botany::Scheduling.schedule_whenever! self' }
+
+      job_list = Whenever::JobList.new options
+
+      cron = job_list.generate_cron_output
+
+      expect(cron).to include '0 0 * * 3'
     end
   end
 end
