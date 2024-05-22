@@ -1,3 +1,4 @@
+require_relative 'botany/scheduling'
 require_relative 'botany/bot'
 require_relative 'botany/version'
 
