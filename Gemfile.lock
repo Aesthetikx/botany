@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     botany (0.1.0)
+      gli (~> 2)
       whenever (~> 1.0)
 
 GEM
@@ -10,6 +11,7 @@ GEM
     ast (2.4.2)
     chronic (0.10.2)
     diff-lcs (1.5.1)
+    gli (2.21.1)
     json (2.7.2)
     language_server-protocol (3.17.0.3)
     parallel (1.24.0)
