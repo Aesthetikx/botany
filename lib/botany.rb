@@ -9,3 +9,5 @@ require 'whenever'
 module Botany
   class Error < StandardError; end
 end
+
+require_relative 'botany/cli'

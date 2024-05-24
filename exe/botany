@@ -2,8 +2,4 @@
 
 require 'botany'
 
-puts "Botany #{Botany::VERSION}"
-
-options = { update: true }
-
-Whenever::CommandLine.execute options
+exit Botany::CLI.run ARGV

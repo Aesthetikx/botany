@@ -30,6 +30,18 @@ module Botany
       end
     end
 
+    def self.update_cron!
+      options = {
+        string: 'Botany::Scheduling.schedule_whenever! self',
+        update: true,
+        file: __FILE__ # We just need any file to prevent whenever from exiting
+      }
+
+      Signal.trap 'EXIT' do
+        Whenever::CommandLine.execute options
+      end
+    end
+
     private
 
     def every *args
