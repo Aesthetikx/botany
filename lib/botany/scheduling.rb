@@ -1,3 +1,5 @@
+require 'whenever'
+
 module Botany
   module Scheduling
     def schedule &block
