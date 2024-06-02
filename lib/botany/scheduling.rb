@@ -36,6 +36,7 @@ module Botany
       options = {
         string: 'Botany::Scheduling.schedule_whenever! self',
         update: true,
+        identifier: Bundler.root,
         file: __FILE__ # We just need any file to prevent whenever from exiting
       }
 
