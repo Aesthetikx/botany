@@ -3,6 +3,7 @@ module Botany
 end
 
 require_relative 'botany/enumerating'
+require_relative 'botany/logging'
 require_relative 'botany/performing'
 require_relative 'botany/scheduling'
 require_relative 'botany/version'
