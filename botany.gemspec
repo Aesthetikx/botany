@@ -31,6 +31,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'gli', '~> 2'
   spec.add_dependency 'whenever', '~> 1.0'
+  spec.add_dependency 'zeitwerk', '~> 2'
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html
