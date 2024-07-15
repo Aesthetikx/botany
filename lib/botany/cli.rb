@@ -26,7 +26,17 @@ module Botany
 
         bot = Object.const_get klass_name
 
+        start = Time.now
+
+        Botany.logger.info { "Starting #{bot}.#{method} at #{start}" }
+
         bot.new.send method
+
+        stop = Time.now
+
+        duration = stop - start
+
+        Botany.logger.info { "Finished #{bot}.#{method} (#{duration})" }
       end
     end
   end
