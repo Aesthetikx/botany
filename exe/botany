@@ -2,4 +2,6 @@
 
 require 'botany'
 
+Bundler.require
+
 exit Botany::CLI.run ARGV
